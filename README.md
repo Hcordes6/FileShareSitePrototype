@@ -2,7 +2,7 @@
 
 Website made from scratch, supporting user registration/login, creating news posts for authenticated users, Upvote/downvote system, + more. 
 
-#Tech Stack
+# Tech Stack
 - HTML/CSS Frontend
 - PHP Backend
 - MySQL Database
