@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #0A0908;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header a {
+    color: #40544a;
+    text-decoration: none;
+}
+
+header h1 {
+    color: #40544a;
+}
+
+main {
+    background-color: #F2F4F3;
+    min-height: 100vh;
+    padding: 20px 15%;
+}
+
+.mainHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+#login{
+    background-color: rgb(41, 74, 51);
+    color: rgb(255, 255, 255);
+}
+
+#signout{
+    background-color: rgb(177, 49, 49);
+    color: white;
+}
+
+#upload{
+    background-color: rgb(108, 224, 108);
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+#signoutForm {
+    display: inline;
+}
+
+.notSigned {
+    color: red;
+    text-align: center;
+}
+
+.errorText {
+    color: red;
+}
+
+.loginForm {
+    width: min(100%, max(30%, 300px));
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ececec;
+}
+
+.loginForm button {
+    width: 100%;
+    margin-top: 10px;
+}
+.loginForm input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.loginForm label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.loginForm h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.postEditingForm {
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ececec;
+}
+
+.createPostForm {
+    width: max(70%, 200px);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ececec;
+}
+
+.createPostForm h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.createPostForm label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.createPostForm input,
+.createPostForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.createPostForm textarea {
+    resize: vertical;
+}
+
+.createPostForm button {
+    width: 150px;
+    margin-top: 15px;
+    align-self: right;
+    padding: 12px;
+    background-color: rgb(108, 224, 108);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.files {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#back{
+    background-color: rgb(224, 224, 108);
+
+}
+
+.tired {
+    margin-bottom: 20px;
+}
+
+
+
+/* newsSite.php */
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+article h2 {
+    margin-bottom: 10px;
+}
+
+.storyLink {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.comments {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.comments h3 {
+    margin-bottom: 10px;
+}
+
+.comments .comments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.comment .edit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.comment .delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.noeffecthref {
+    text-decoration: none;
+}
+
+.post-header {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    color: grey;
+    font-size: 14px;
+}
+
+.post-header .edit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.post-header .delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.commentForm .text {
+    width: calc(100% - 150px);
+}
+
+.commentForm .post {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Voting System */
+.sort-toggle {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sort-toggle a {
+    color: #40544a;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.sort-toggle a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+article.post_short {
+    display: flex;
+    align-items: flex-start;
+}
+
+.story-votes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    min-width: 40px;
+}
+
+.story-content {
+    flex: 1;
+}
+
+.vote-form {
+    display: inline;
+}
+
+.vote-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 2px 5px;
+    color: #888;
+}
+
+.vote-btn:hover {
+    color: #333;
+}
+
+.vote-btn.upvote:hover, .vote-btn.upvote.voted {
+    color: #4CAF50;
+}
+
+.vote-btn.downvote:hover, .vote-btn.downvote.voted{
+    color: #f44336;
+}
+
+
+.vote-count {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px 0;
+}
